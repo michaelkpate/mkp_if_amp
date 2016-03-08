@@ -1,0 +1,2 @@
+# mkp_if_amp
+A Textpattern Conditional Plugin for Google's Accelerated Mobile Pages Project (AMP) 
