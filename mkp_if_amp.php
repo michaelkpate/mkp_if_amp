@@ -1,7 +1,7 @@
 // TXP 4.6 tag registration
 if (class_exists('Textpattern_Tag_Registry')) {
 	Txp::get('Textpattern_Tag_Registry')
-		->register('adi_if_amp')
+		->register('mkp_if_amp')
 	;
 }
 
