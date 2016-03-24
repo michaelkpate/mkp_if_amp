@@ -1,47 +1,36 @@
-<h1>mkp_if_amp</h1>
+h1. mkp_if_amp
 
-	<p>This conditional tag examines the url of the current page and determines if the url ends in 'amp.' This allows for a custom page to be rendered using the standards for Google's Accelerated Mobile Pages Project.</p>
+This conditional tag examines the url of the current page and determines if the url ends in 'amp.' This allows for a custom page to be rendered using the standards for Google's Accelerated Mobile Pages Project.
 
-	<h2>Acknowledgements</h2>
+h2. Links
 
-	<p>There was an earlier version of this plugin called mkp_archives that I lost when the Textdrive hosting service went down. But I think this one is actually an improvement anyway. Also thanks to <a href="http://www.greatoceanmedia.com.au/txp/?plugin=adi_gps">adi_gps</a> and <a href="http://stefdawson.com/sw/plugins/smd_if">smd_if</a> for some definite inspiration.</p>
+* "Github Code Repository":https://github.com/michaelkpate/mkp_if_amp
+* "Download":https://raw.githubusercontent.com/michaelkpate/mkp_if_amp/master/mkp_if_amp.txt
+* "Demo Site":http://ampdemo.cmsstyles.com/
 
-	<h2>Links</h2>
+h2. mkp_if_amp
 
-	<ul>
-		<li><a href="https://github.com/michaelkpate/mkp_if_amp">Github Code Repository</a></li>
-		<li><a href="https://raw.githubusercontent.com/michaelkpate/mkp_if_amp/master/mkp_if_amp.txt">Download</a></li>
-		<li><a href="http://ampdemo.cmsstyles.com/">Demo Site</a></li>
-	</ul>
+h3. Attributes
 
-	<h2>mkp_if_amp</h2>
+h4. None
 
-	<p>Just use &lt;txp:mkp_url_parameters /&gt; at the top of a page or form where you need to capture <span class="caps">URL</span> information. For a better explanation, you will want to visit the Demo Site.</p>
-
-	<h3>Attributes</h3>
-
-	<h4>None</h4>
-
-	<h3>Examples</h3>
+h3. Examples
 
 You will want some code similar to this in your individual article template header so that the amp page can be properly detected.
 
-<pre><code>
-<txp:if_individual_article>
+bc. <txp:if_individual_article>
  <link rel="canonical" href="<txp:permlink />">
-  <link rel="amphtml" href="<txp:permlink />/amp/">
+ <link rel="amphtml" href="<txp:permlink />/amp/">
 </txp:if_individual_article>
-</code></pre>
 
 You will want something similar to this in your individual article template to display the alternative formatting.
-<pre><code>
-<txp:mkp_if_amp>
-<txp:output_form form="layout_archives_amp" />
+
+bc. <txp:mkp_if_amp>
+ <txp:output_form form="layout_archives_amp" />
 <txp:else />
-<txp:output_form form="layout_archives_standard" />
+ <txp:output_form form="layout_archives_standard" />
 </txp:_mkp_if_amp>
-</code></pre>
 
-	<h3>Release History</h3>
+h3. Release History
 
-	<p>Version x.x: March xxx, 2016</p>
+Version 1.0: March 24th, 2016
