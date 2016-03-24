@@ -1,8 +1,8 @@
 // TXP 4.6 tag registration
-if (class_exists('Textpattern_Tag_Registry')) {
-	Txp::get('Textpattern_Tag_Registry')
-		->register('mkp_if_amp')
-	;
+if (class_exists('\Textpattern\Tag\Registry')) {
+Txp::get('\Textpattern\Tag\Registry')
+->register('mkp_if_amp')
+;
 }
 
 function mkp_if_amp($atts, $thing='')
