@@ -2,6 +2,8 @@ h1. mkp_if_amp
 
 This conditional tag examines the url of the current page and determines if the url ends in 'amp.' This allows for a custom page to be rendered using the standards for Google's Accelerated Mobile Pages Project.
 
+Note: I deliberately wanted to keep this simple. If you are looking for additional features, I highly recommend checking out "pat_if_amp":https://github.com/cara-tm/pat_if_amp, which started out as a fork but has added a number of additional featuress.
+
 h2. Links
 
 * "Github Code Repository":https://github.com/michaelkpate/mkp_if_amp
